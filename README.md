@@ -37,7 +37,9 @@ Use this method if you are editing the mod directly.
 
 ----------
 thegreatlibrary.bookshelf_books = {
+
     -- Existing books...
+    
     {
         id = "my_new_book",          -- Unique internal ID (no spaces)
         title = "The History of Mining", -- Display title
