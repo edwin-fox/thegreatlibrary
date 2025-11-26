@@ -37,15 +37,13 @@ Use this method if you are editing the mod directly.
 
 ----------
 thegreatlibrary.bookshelf_books = {
-
     -- Existing books...    
     {
         id = "my_new_book",          -- Unique internal ID (no spaces)
         title = "The History of Mining", -- Display title
         filename = "mining_history.txt", -- The filename in the /books/ folder
         description = "A comprehensive guide to ores." -- Optional tooltip
-    },
-    
+    },    
 }
 ----------
 
