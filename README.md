@@ -32,20 +32,7 @@ Use this method if you are editing the mod directly.
 
     Open bookshelf.lua.
 
-    Add a new entry to the thegreatlibrary.bookshelf_books table:
-
-
-----------
-thegreatlibrary.bookshelf_books = {
-    -- Existing books...    
-    {
-        id = "my_new_book",          -- Unique internal ID (no spaces)
-        title = "The History of Mining", -- Display title
-        filename = "mining_history.txt", -- The filename in the /books/ folder
-        description = "A comprehensive guide to ores." -- Optional tooltip
-    },    
-}
-----------
+    Add a new entry to the thegreatlibrary.bookshelf_books table (follow example from books in package)
 
 Method 2: The External API (Recommended for Modpacks)
 
@@ -60,7 +47,6 @@ If you are creating a separate mod and want to inject books into The Great Libra
     Call the registration function:
 
 ----------
-
 if minetest.get_modpath("thegreatlibrary") then
 
     thegreatlibrary.register_external_book(
