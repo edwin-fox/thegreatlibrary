@@ -56,7 +56,6 @@ if minetest.get_modpath("thegreatlibrary") then
         "guide.txt",                    -- Filename in YOUR mod's /books/ folder
         "A guide to surviving the wilds" -- Description
     )
-    
 end
 ----------
 
