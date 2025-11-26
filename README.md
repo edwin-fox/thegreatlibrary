@@ -38,14 +38,14 @@ Use this method if you are editing the mod directly.
 ----------
 thegreatlibrary.bookshelf_books = {
 
-    -- Existing books...
-    
+    -- Existing books...    
     {
         id = "my_new_book",          -- Unique internal ID (no spaces)
         title = "The History of Mining", -- Display title
         filename = "mining_history.txt", -- The filename in the /books/ folder
         description = "A comprehensive guide to ores." -- Optional tooltip
     },
+    
 }
 ----------
 
@@ -64,6 +64,7 @@ If you are creating a separate mod and want to inject books into The Great Libra
 ----------
 
 if minetest.get_modpath("thegreatlibrary") then
+
     thegreatlibrary.register_external_book(
         minetest.get_current_modname(), -- Your mod name
         "custom_guide",                 -- Unique ID
@@ -71,6 +72,7 @@ if minetest.get_modpath("thegreatlibrary") then
         "guide.txt",                    -- Filename in YOUR mod's /books/ folder
         "A guide to surviving the wilds" -- Description
     )
+    
 end
 ----------
 
@@ -82,12 +84,14 @@ Example: If you registered a book with the ID esquerdismo, the item name is theg
 
 ----------
 minetest.register_craft({
+
     output = "thegreatlibrary:esquerdismo",
     recipe = {
         {"default:paper", "default:paper", "default:paper"},
         {"default:paper", "default:book",  "default:paper"},
         {"default:paper", "default:paper", "default:paper"}
     }
+    
 })
 ----------
 
